@@ -53,7 +53,7 @@ data class Trie(var trie: Node) {
                     next.first { it.value == str.first() }.terminal = false
                     if (next.first { it.value == str.first() }.next.isEmpty()) {
                         next = next.filter { it.value != str.first() }.toMutableSet() // ! - не работает, если изменить
-                        terminal = true     // connected (1) /\
+                        if (next.isEmpty()) terminal = true     // connected (1) /\
                     }
                     return true
                 } else return false
