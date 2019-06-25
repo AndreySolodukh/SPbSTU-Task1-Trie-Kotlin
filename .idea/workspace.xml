@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d9a1f24-e455-4cc9-8a65-68681fc9c2b8" name="Default Changelist" comment="">
+    <list default="true" id="8d9a1f24-e455-4cc9-8a65-68681fc9c2b8" name="Default Changelist" comment="ver. 2.1:&#10;  - Методы Node перенесены в Trie&#10;  - В Node добавлен метод toTrie&#10;  - Переименованы методы:&#10;    - addStr =&gt; addString&#10;    - delStr =&gt; deleteString&#10;  - Изменения в методах addString, deleteString, find и findPrefix&#10;  - Тесты изменены для работы с Trie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt" afterDir="false" />
     </list>
@@ -18,38 +19,47 @@
     <session id="1109663114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="kt" value="2" />
+          <entry key="java" value="5" />
+          <entry key="kt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="Kotlin" value="2" />
+          <entry key="JAVA" value="5" />
+          <entry key="Kotlin" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="6772" />
-          <entry key="txt" value="196" />
+          <entry key="java" value="536" />
+          <entry key="kt" value="8401" />
+          <entry key="txt" value="516" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="6772" />
-          <entry key="PLAIN_TEXT" value="196" />
+          <entry key="JAVA" value="536" />
+          <entry key="Kotlin" value="8401" />
+          <entry key="PLAIN_TEXT" value="516" />
         </counts>
       </usages-collector>
     </session>
@@ -57,22 +67,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="-2057">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding>
+                <element signature="e#15#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="159" column="20" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="20" />
-              <folding>
-                <element signature="e#15#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="867">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -83,6 +93,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,8 +103,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/tasks/ClassHardBass.java" />
         <option value="$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt" />
       </list>
     </option>
   </component>
@@ -121,8 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,13 +192,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557745372537" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561449841753" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -204,7 +216,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.f">
+  <component name="RunManager" selected="JUnit.Tests.testdel">
+    <configuration name="ClassHardBass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tasks.ClassHardBass" />
+      <module name="trie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trie" />
       <extension name="coverage">
@@ -219,7 +244,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.efficiency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.eff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trie" />
       <extension name="coverage">
         <pattern>
@@ -229,23 +254,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tasks" />
       <option name="MAIN_CLASS_NAME" value="tasks.Tests" />
-      <option name="METHOD_NAME" value="efficiency" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.f" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tasks" />
-      <option name="MAIN_CLASS_NAME" value="tasks.Tests" />
-      <option name="METHOD_NAME" value="f" />
+      <option name="METHOD_NAME" value="eff" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,19 +293,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Tests.testdel" />
-      <item itemvalue="JUnit.Tests.efficiency" />
       <item itemvalue="JUnit.Tests.testadd" />
       <item itemvalue="JUnit.Tests" />
-      <item itemvalue="JUnit.Tests.f" />
+      <item itemvalue="JUnit.Tests.eff" />
+      <item itemvalue="Application.ClassHardBass" />
+      <item itemvalue="JUnit.Tests.testdel" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.f" />
-        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.testdel" />
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.testadd" />
-        <item itemvalue="JUnit.Tests.efficiency" />
+        <item itemvalue="Application.ClassHardBass" />
+        <item itemvalue="JUnit.Tests.eff" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +327,17 @@
       <workItem from="1557140211078" duration="1830000" />
       <workItem from="1557656400024" duration="3728000" />
       <workItem from="1557662404304" duration="21452000" />
-      <workItem from="1557745140427" duration="229000" />
+      <workItem from="1557745140427" duration="288000" />
+      <workItem from="1557745464799" duration="1853000" />
+      <workItem from="1557754166967" duration="519000" />
+      <workItem from="1559479349752" duration="83000" />
+      <workItem from="1559489760405" duration="27000" />
+      <workItem from="1560044842962" duration="252000" />
+      <workItem from="1560228498370" duration="2007000" />
+      <workItem from="1560442073358" duration="1499000" />
+      <workItem from="1560449874910" duration="3380000" />
+      <workItem from="1560459096320" duration="595000" />
+      <workItem from="1561441911460" duration="6453000" />
     </task>
     <task id="LOCAL-00001" summary="ver. 1.01:&#10; Тесты для разных методов класса распределены по &#10; разным функциям.">
       <created>1552731783967</created>
@@ -334,49 +353,55 @@
       <option name="project" value="LOCAL" />
       <updated>1557684761112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ver. 2.01 - небольшие исправления в trie">
+      <created>1557745429132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557745429132</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_efficiency - 2019.05.12 at 21h 05m 03s.xml">
-      <configuration name="Tests.efficiency" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_efficiency - 2019.05.12 at 21h 05m 33s.xml">
-      <configuration name="Tests.efficiency" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_efficiency - 2019.05.12 at 21h 06m 24s.xml">
-      <configuration name="Tests.efficiency" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_efficiency - 2019.05.12 at 21h 06m 37s.xml">
-      <configuration name="Tests.efficiency" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_efficiency - 2019.05.12 at 21h 06m 58s.xml">
-      <configuration name="Tests.efficiency" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_testadd - 2019.05.12 at 21h 08m 06s.xml">
+    <history-entry file="Tests_testadd - 2019.06.25 at 10h 42m 57s.xml">
       <configuration name="Tests.testadd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testdel - 2019.05.12 at 21h 08m 10s.xml">
+    <history-entry file="Tests_testadd - 2019.06.25 at 10h 43m 10s.xml">
+      <configuration name="Tests.testadd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_testadd - 2019.06.25 at 10h 46m 35s.xml">
+      <configuration name="Tests.testadd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests - 2019.06.25 at 10h 48m 29s.xml">
+      <configuration name="Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests - 2019.06.25 at 10h 49m 47s.xml">
+      <configuration name="Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests - 2019.06.25 at 10h 53m 38s.xml">
+      <configuration name="Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests - 2019.06.25 at 10h 54m 44s.xml">
+      <configuration name="Tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_testdel - 2019.06.25 at 10h 55m 04s.xml">
       <configuration name="Tests.testdel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testdel - 2019.05.12 at 21h 08m 44s.xml">
+    <history-entry file="Tests_testdel - 2019.06.25 at 10h 55m 36s.xml">
       <configuration name="Tests.testdel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testdel - 2019.05.12 at 21h 10m 05s.xml">
-      <configuration name="Tests.testdel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_testdel - 2019.05.12 at 21h 10m 22s.xml">
+    <history-entry file="Tests_testdel - 2019.06.25 at 11h 01m 02s.xml">
       <configuration name="Tests.testdel" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32990000" />
+    <option name="totallyTimeSpent" value="49696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13691275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,7 +410,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,7 +419,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,7 +470,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ver. 1.01:&#10; Тесты для разных методов класса распределены по &#10; разным функциям." />
     <MESSAGE value="ver 2.0 - полностью переписан весь класс Trie и тесты к нему" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver 2.0 - полностью переписан весь класс Trie и тесты к нему" />
+    <MESSAGE value="ver. 2.01 - небольшие исправления в trie" />
+    <MESSAGE value="ver. 2.1:&#10;  - Методы Node перенесены в Trie&#10;  - В Node добавлен метод toTrie&#10;  - Переименованы методы:&#10;    - addStr =&gt; addString&#10;    - delStr =&gt; deleteString&#10;  - Изменения в методах addString, deleteString, find и findPrefix&#10;  - Тесты изменены для работы с Trie" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver. 2.1:&#10;  - Методы Node перенесены в Trie&#10;  - В Node добавлен метод toTrie&#10;  - Переименованы методы:&#10;    - addStr =&gt; addString&#10;    - delStr =&gt; deleteString&#10;  - Изменения в методах addString, deleteString, find и findPrefix&#10;  - Тесты изменены для работы с Trie" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -458,20 +485,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/tasks/ClassHardBass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="782">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/lib/src.zip!/java.base/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/lib/src.zip!/java.base/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/tasks/Tests.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+        <state relative-caret-position="-2057">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="e#15#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/tasks/Trie.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
         </state>
       </provider>
     </entry>
