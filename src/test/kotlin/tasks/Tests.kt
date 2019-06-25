@@ -34,8 +34,8 @@ class Tests {
                         true), Node('l', mutableSetOf(Node('c', mutableSetOf(),
                         true)), false)), false)), false), // <<<< added
                 Node('O', mutableSetOf(Node('n', mutableSetOf(Node('e', mutableSetOf(),
-                        true)), false)), false)), false)).hashCode(),
-                trie.hashCode()) // (Dog, One, Cat, Calc)
+                        true)), false)), false)), false)),
+                trie) // (Dog, One, Cat, Calc)
 
         trie.addString("Doge")
         assertEquals(Trie(Node('*', mutableSetOf(
